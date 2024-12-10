@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.bg-light-violet{
+    background-color: #808AE7;
+}
+
+.w-32{
+    width: 32%;
+}
+
+.rounded-x{
+    border-radius: 5px;
+}
