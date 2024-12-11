@@ -6,16 +6,8 @@
 }
 
 body {
-    /* margin: 0;
-    
-    background-color: #003459;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
     font-family: Arial, sans-serif;
-  }
+}
   
 p{
     padding: 0;
@@ -60,6 +52,14 @@ p{
     align-items: center;
     flex-direction: column;
     color: black;
+    box-shadow: 1px 3px 3px rgb(36, 36, 36, 0.4);
+    filter: brightness(1);
+    transition: filter 0.3s ease-in-out;
+}
+
+.competition-card:hover{
+    filter: brightness(0.9);
+    transition: filter 0.3s ease-in-out;
 }
 
 .guy-mic{
@@ -74,6 +74,7 @@ p{
     font-weight: bold;
     font-size: 33px;
     text-align: center;
+    cursor: default;
 }
 
 .competition-desc{
@@ -93,6 +94,61 @@ p{
     border-radius: 10px;
     margin-top: 10px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.competition-card button:hover{
+    background-color: black;
+    transition: background-color 0.3s ease-in-out
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    padding-bottom: 200px;
+    background-color: #003459;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.about-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.about-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Spacing between logo and text */
+}
+
+.logo {
+    width: 270px; /* Adjust the size of the logo */
+    height: 270px;
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.about-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    color: white;
+    text-align: right; /* Align text to the left */
 }
 
 .contact-container {
@@ -180,4 +236,3 @@ p{
 .contact-form button:hover {
     background-color: #808AE7;
 }
-  
