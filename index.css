@@ -132,13 +132,13 @@ p{
 .about-details {
     display: flex;
     align-items: flex-start;
-    gap: 30px; /* Spacing between logo and text */
+    gap: 30px;
 }
 
 .logo {
-    width: 270px; /* Adjust the size of the logo */
+    width: 270px;
     height: 270px;
-    flex-shrink: 0; /* Prevent the logo from shrinking */
+    flex-shrink: 0;
 }
 
 .about-text {
@@ -148,7 +148,7 @@ p{
     line-height: 1.6;
     max-width: 800px;
     color: white;
-    text-align: right; /* Align text to the left */
+    text-align: right;
 }
 
 .contact-container {
@@ -235,4 +235,58 @@ p{
   
 .contact-form button:hover {
     background-color: #808AE7;
+}
+
+.foot1{
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+}
+.footerimg{
+    margin-left: 3vw;
+    margin-right: 30px;
+}
+.imekbinus{
+    width: 23vw;
+}
+
+.imekhimti{
+    width: 15vw;
+}
+
+.footersoc {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+    align-items: center;
+    gap: 3vh;
+    margin-right: 10vh;
+
+}
+.imek{
+    width: 3vw;
+    margin-right: 4vh;
+}
+.footersoc a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: 3vh;
+    font-family:Arial;
+}
+.kopirait{
+    padding-top: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family:Arial;
+    font-size: 4vh;
+}
+
+.footer{
+	background-color: #ffffff;
+    width: 100%;
+    min-height: 50vh;
+    padding: 70px 0;
 }
