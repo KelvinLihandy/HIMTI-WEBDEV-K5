@@ -14,6 +14,156 @@ p{
     margin: 0;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #ffffff;
+    color: #003366;
+    padding: 0.1rem 1rem; /* Kurangi padding agar navbar lebih kecil */
+    height: 50px; /* Tetapkan tinggi navbar secara eksplisit */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* Hilangkan margin ekstra */
+}
+
+.navbar .logo img {
+    max-height: 30px; /* Perkecil ukuran logo */
+    margin-right: 0.5rem; /* Tetap pertahankan jarak kecil */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Kurangi jarak antar item */
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Posisikan sejajar dengan logo */
+}
+
+
+.navbar .container {
+    justify-content: flex-start; /* Pastikan elemen berada di awal */
+}
+
+.nav-links {
+    margin-left: 0; /* Hilangkan margin-left */
+    margin-right: 0; /* Hilangkan margin-right */
+}
+
+.nav-links a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem; /* Kecilkan ukuran teks */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Tambahan penting */
+.navbar .container {
+    gap: 0.5rem; /* Atur jarak antar elemen dalam container */
+}
+
+.nav-links {
+    flex-grow: 1; /* Buat elemen ul menggunakan ruang kosong di sebelah kanan logo */
+}
+
+
+.nav-links a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem; /* Kecilkan ukuran teks */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1rem; /* Tambahkan padding horizontal */
+    background: #ffffff;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 10rem; /* Geser lebih ke kanan */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Perkecil ukuran font */
+    color: #003366;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-content h1 span {
+    font-weight: normal;
+}
+
+.hero-content p {
+    margin-top: 1rem;
+    font-size: 1.5rem; /* Perkecil ukuran teks */
+    color: #555;
+}
+
+.hero-image {
+    margin-right: 2rem; /* Tambahkan jarak di kanan gambar hero */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Polygon Styles */
+.polygon {
+    position: absolute;
+    z-index: -1;
+}
+
+.polygon-left {
+    bottom: 0;
+    left: 0;
+    width: 100px;
+}
+
+.polygon-right-big {
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+.polygon-right-small {
+    top: 70px;
+    right: 10%;
+    width: 100px;
+}
+
 .wrapper{
     width: 100vw;
     height: auto;
