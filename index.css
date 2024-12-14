@@ -24,98 +24,57 @@ p{
 }
 
 /* Navbar Styles */
-.navbar {
-    background: #ffffff;
-    color: #003366;
-    padding: 0.1rem 1rem; /* Kurangi padding agar navbar lebih kecil */
-    height: 50px; /* Tetapkan tinggi navbar secara eksplisit */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+nav {
     display: flex;
     align-items: center;
+    padding: 0 0 0 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 50px;
 }
 
-.navbar .logo {
+img.logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left:50px;
+}
+
+.nav-item {
     display: flex;
     align-items: center;
-    margin-right: 0; /* Hilangkan margin ekstra */
+    gap: 15px;
 }
 
-.navbar .logo img {
-    max-height: 30px; /* Perkecil ukuran logo */
-    margin-right: 0.5rem; /* Tetap pertahankan jarak kecil */
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem; /* Kurangi jarak antar item */
-    margin: 0;
-    padding: 0;
-    align-items: center; /* Posisikan sejajar dengan logo */
-}
-
-
-.navbar .container {
-    justify-content: flex-start; /* Pastikan elemen berada di awal */
-}
-
-.nav-links {
-    margin-left: 0; /* Hilangkan margin-left */
-    margin-right: 0; /* Hilangkan margin-right */
-}
-
-.nav-links a {
-    color: #003366;
+a {
     text-decoration: none;
+    color: #333;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 0.9rem; /* Kecilkan ukuran teks */
+    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Tambahan penting */
-.navbar .container {
-    gap: 0.5rem; /* Atur jarak antar elemen dalam container */
-}
-
-.nav-links {
-    flex-grow: 1; /* Buat elemen ul menggunakan ruang kosong di sebelah kanan logo */
+a:hover {
+    color: #007BFF;
 }
 
 
-.nav-links a {
-    color: #003366;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem; /* Kecilkan ukuran teks */
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section Styles */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 1rem; /* Tambahkan padding horizontal */
+    padding: 4rem 1rem;
     background: #ffffff;
     position: relative;
 }
 
 .hero-content {
     max-width: 600px;
-    margin-left: 10rem; /* Geser lebih ke kanan */
+    margin-left: 10rem;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem; /* Perkecil ukuran font */
+    font-size: 3.5rem; 
     color: #003366;
     margin: 0;
     font-weight: bold;
@@ -127,12 +86,12 @@ p{
 
 .hero-content p {
     margin-top: 1rem;
-    font-size: 1.5rem; /* Perkecil ukuran teks */
+    font-size: 1.5rem; 
     color: #555;
 }
 
 .hero-image {
-    margin-right: 2rem; /* Tambahkan jarak di kanan gambar hero */
+    margin-right: 2rem; 
 }
 
 .hero-image img {
