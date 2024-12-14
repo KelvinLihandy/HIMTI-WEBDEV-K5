@@ -100,10 +100,6 @@ a:hover {
 }
 
 /* Polygon Styles */
-.polygon {
-    position: absolute;
-    z-index: -1;
-}
 
 .polygon-left {
     bottom: 10px;
@@ -112,7 +108,7 @@ a:hover {
 }
 
 .polygon-right-big {
-    bottom: 0;
+    bottom: -50;
     right: 0;
     width: 300px;
 }
