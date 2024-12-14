@@ -33,7 +33,7 @@ nav {
     height: 50px;
 }
 
-img.logo {
+nav img.logo {
     height: 30px;
     width: 30px;
     margin-right: 20px;
@@ -106,8 +106,8 @@ a:hover {
 }
 
 .polygon-left {
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
     width: 100px;
 }
 
